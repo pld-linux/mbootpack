@@ -1,4 +1,5 @@
-Summary:	mbootpack takes kernel and modules (e.g. a Xen VMM, linux kernel and initrd), and packages them up as a single file
+Summary:	Packaging Linux kernel and modules as a single file
+Summary(pl):	Pakowanie j±dra Linuksa i modu³ów do pojedynczego pliku
 Name:		mbootpack
 Version:	0.4a
 Release:	0.1
@@ -11,11 +12,19 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is a tool that takes a multiboot kernel and modules (e.g. a Xen
-VMM, linux kernel and initrd), and packages them up as a single file
-that looks like a bzImage linux kernel. The aim is to allow you to
+VMM, Linux kernel and initrd), and packages them up as a single file
+that looks like a bzImage Linux kernel. The aim is to allow you to
 boot multiboot kernels (in particular, Xen) using bootloaders that
 don't support multiboot (i.e. pretty much anything except GRUB and
 SYSLINUX).
+
+%description -l pl
+To narzêdzie bierze j±dro multiboot i modu³y (np. xenowy VMM, j±dro
+Linuksa i initrd) i pakuje je jako pojedynczy plik wygl±daj±cy jak
+j±dro Linuksa bzImage. Celem jest umo¿liwienie uruchamiania j±der
+multiboot (w szczególno¶ci Xena) przy u¿yciu bootloaderów nie
+obs³uguj±cych multiboot (czyli prawie wszystkich z wyj±tkiem GRUB-a i
+SYSLINUKSA).
 
 %prep
 %setup -q
@@ -27,8 +36,6 @@ SYSLINUX).
 
 %install
 rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
-install -d $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sbindir}
 
 install %{name} $RPM_BUILD_ROOT%{_sbindir}
