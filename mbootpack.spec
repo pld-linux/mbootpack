@@ -1,5 +1,5 @@
 Summary:	Packaging Linux kernel and modules as a single file
-Summary(pl.UTF-8):   Pakowanie jądra Linuksa i modułów do pojedynczego pliku
+Summary(pl.UTF-8):	Pakowanie jądra Linuksa i modułów do pojedynczego pliku
 Name:		mbootpack
 Version:	0.4a
 Release:	0.1
