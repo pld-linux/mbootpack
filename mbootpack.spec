@@ -1,5 +1,5 @@
 Summary:	Packaging Linux kernel and modules as a single file
-Summary(pl):	Pakowanie j±dra Linuksa i modu³ów do pojedynczego pliku
+Summary(pl.UTF-8):   Pakowanie jÄ…dra Linuksa i moduÅ‚Ã³w do pojedynczego pliku
 Name:		mbootpack
 Version:	0.4a
 Release:	0.1
@@ -18,12 +18,12 @@ boot multiboot kernels (in particular, Xen) using bootloaders that
 don't support multiboot (i.e. pretty much anything except GRUB and
 SYSLINUX).
 
-%description -l pl
-To narzêdzie bierze j±dro multiboot i modu³y (np. xenowy VMM, j±dro
-Linuksa i initrd) i pakuje je jako pojedynczy plik wygl±daj±cy jak
-j±dro Linuksa bzImage. Celem jest umo¿liwienie uruchamiania j±der
-multiboot (w szczególno¶ci Xena) przy u¿yciu bootloaderów nie
-obs³uguj±cych multiboot (czyli prawie wszystkich z wyj±tkiem GRUB-a i
+%description -l pl.UTF-8
+To narzÄ™dzie bierze jÄ…dro multiboot i moduÅ‚y (np. xenowy VMM, jÄ…dro
+Linuksa i initrd) i pakuje je jako pojedynczy plik wyglÄ…dajÄ…cy jak
+jÄ…dro Linuksa bzImage. Celem jest umoÅ¼liwienie uruchamiania jÄ…der
+multiboot (w szczegÃ³lnoÅ›ci Xena) przy uÅ¼yciu bootloaderÃ³w nie
+obsÅ‚ugujÄ…cych multiboot (czyli prawie wszystkich z wyjÄ…tkiem GRUB-a i
 SYSLINUKSA).
 
 %prep
